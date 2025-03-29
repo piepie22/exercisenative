@@ -2,14 +2,14 @@
   "name": "exercisenative",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "homepage": "https://piepie22.github.io/exercisenative",
   "scripts": {
     "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "jest --watchAll",
-    "lint": "expo lint"
+    "predeploy": "expo export:web",
+    "deploy": "gh-pages -d web-build"
   },
   "jest": {
     "preset": "jest-expo"
